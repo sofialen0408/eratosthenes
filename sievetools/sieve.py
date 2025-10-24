@@ -51,6 +51,12 @@ def sieve_fast(nmax):
     
     all_primes = []
 
+    if nmax == 1: 
+        return all_primes
+		
+    if nmax < 1: 
+        raise ValueError("Cannot be less than 1")
+
     if nmax == 2: 
         all_primes = [2]
 
